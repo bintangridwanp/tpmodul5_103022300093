@@ -1,16 +1,15 @@
-﻿using tpmodul5_103022300093;
 using System;
-namespace tpmodul5_NIM
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            HaloGeneric halo = new HaloGeneric();
-            halo.SapaUser("NamaPanggilan");
 
-            DataGeneric<string> data = new DataGeneric<string>("NIMAnda");
-            data.PrintData();
-        }
+class Program
+{
+    static void Main()
+    {
+        // Memanggil generic method
+        HaloGeneric halo = new HaloGeneric();
+        halo.SapaUser("Budi");
+
+        // Menggunakan generic class
+        DataGeneric<string> data = new DataGeneric<string>("1202200001");
+        data.PrintData();
     }
 }
